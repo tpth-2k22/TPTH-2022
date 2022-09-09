@@ -15,41 +15,56 @@
     .new{
         padding:5% 10%;
     }
-        
+
     /* Styling column */
+    .new_tag_row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .new_tag_column {
         float: left;
-        width: 33%;
+        width: 14%;
         margin-bottom: 16px;
         padding: 5px 10px;
-        align-self: center;
+        display: inline-block;
+    }
+
+    .col2{
+      width:25%;
     }
         
-
     #tag1{
         left:50%;
     }
 
-    #centerpeople{
-        margin-left:33%;
-    }
-
-    /* Column width change depends on screen size */
-    @media screen and (max-width: 1000px) {
-        .new_tag_column {
-            width: 100%;
-            text-align: none;
-        }
-
-        #centerpeople{
-            margin-left: 0px;
-        }
-    }
-        
     /* Card designing */
     .new_tag_card {
-        background-color: #EEEE ;
-        height:320px;
+      background-color: #EEEE ;
+      height:max-content;
+      min-height: 200px;
+  }
+
+  .new_tag_card:hover {
+    transition: 0.5s;
+    box-shadow: 0px 1px 5px 0px #d1d1d1;
+  }
+
+    /* Column width change depends on screen size */
+    @media screen and (max-width: 1400px) {
+        .new_tag_column {
+            width: 33%;
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+      .new_tag_column {
+          width: 100%;
+      }
+      .new_tag_card{
+        height:fit-content
+      }
     }
         
     .new_tag_container {
@@ -75,7 +90,7 @@
         display: table;
     }
         
-    /* Button designing */
+    /* Button designing 
     .new_tag_button {
         border: none;
         padding: 8px;
@@ -87,28 +102,38 @@
         margin-bottom: 10px;
     }
         
-    /* Hover effect on button */
+    /* Hover effect on button 
     .new_tag_button:hover {
         background-color: green;
     }
     
-    /* Margining first member of team */
+    /* Margining first member of team 
     #new_tag_gfg {
         float:none;
         margin:auto;
-    }
+    }*/
 
-    /* Image ptions */
+    /* Image options */
 
     .peopleimg{
         margin:10px;
         border-radius: 50%;
-        max-height: 200px;
+        max-height: 100px;
     }
 
-    #peopleheader{
+    .peopleheader{
         color:black;
         letter-spacing: -1px;
+    }
+
+    .people-name{
+      color: #2c2c2c;
+      font-size: medium;
+    }
+
+    .people-desig{
+      color: #464646;
+      font-size: small;
     }
 
     .oa{
@@ -490,8 +515,9 @@
     .info-card{
         display: inline-block;
         padding-left:5%;
-        width:240px;
+        width:260px;
         text-align: center;
+        vertical-align: top;
     }
 
     .info-card i{
@@ -502,11 +528,19 @@
       color:orangered;
       font-family:'Amatic SC';
       font-weight: bolder;
-      margin-bottom: 30px;
+      font-size: xx-large;
+      margin-bottom: 50px;
+    }
+
+    .info p{
+      font-size:16px;
+      line-height: 20px;
+      color: #464646;
+      text-align: center;
+      justify-content:space-evenly; 
     }
 
     .info i:hover{
-      font-size: 68px;
       color: #2c2c2c;
     }
 
@@ -520,4 +554,99 @@
           height:80%;
           margin-bottom: 20px;
       }
+    }
+
+    .vertical{
+        width:2px;
+        background-color: #585858;
+        height:200px;
+        display: inline-block;
+        position: absolute;
+        margin-left: 20px;
+    }
+
+    /*----------------------------------------------------------------
+    */
+
+    .new_tag_card .pic {
+      margin:10px;
+      border-radius: 50%;
+      max-height: 100%;
+      transition: all 0.5s ease 0s;
+      padding: 20px;
+    }
+    .new_tag_card:hover .pic {
+      background: #d1d1d1;
+      border-radius: 50%;
+    }
+    .pic img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+    .new_tag_card .title {
+      color: #2c2c2c;
+      font-size: medium;
+      text-transform: none;
+    }
+    .new_tag_card .post {
+      color:464646;
+      font-size: small;
+    }
+    .new_tag_card .social {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    .new_tag_card .social li {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .new_tag_card .social li a {
+      display: block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      font-size: 15px;
+      color: #ffa03a;
+      border: 1px solid #ffa03a;
+      transition: all 0.5s ease 0s;
+    }
+    .new_tag_card:hover .social li a {
+      background: #ffa03a;
+      color: black;
+    }
+    @media only screen and (max-width: 990px) {
+      .our-team {
+        margin-bottom: 30px;
+      }
+    }
+    .col-md-3 {
+      margin-bottom: 20px;
+      align-items: center;
+    }
+    
+    #firstrow{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    
+    #lastrow{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .main-heading {
+      color: rgb(231, 255, 233);
+    }
+
+    .dropdown{
+      position: relative;
+      display: inline-block;
     }

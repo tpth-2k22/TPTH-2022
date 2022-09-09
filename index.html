@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en" class="no-js">
 
 <head>
@@ -6,8 +7,8 @@
     <title>Tripura Police Technology Hackathon 2022</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="FlameOnePage freebie theme for web startups by FairTech SEO." name="description" />
-    <meta content="FairTech" name="author" />
+    <meta content="The official website for Tripura Police Technology Hackathon" name="Tripura Police" />
+    <meta content="Hackathon" name="Tripura Police" />
     <link rel="stylesheet" href="assets/css/style_new.css">
     <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -22,6 +23,14 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="popup/new_tags.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&family=Sora:wght@600&display=swap"
+        rel="stylesheet">
+
+
 
     <!-- Favicons-->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
@@ -41,6 +50,11 @@
 
 
     <!--For statement icons-->
+    <style>
+        #committee {
+            padding: 2%;
+        }
+    </style>
 
 </head>
 
@@ -49,19 +63,20 @@
 
     <header class="header navbar-fixed-top">
         <nav class="navbar" role="navigation">
-            <div class="container">
+            <div class="logo" style="margin-left: 140px;">
+                <a class="logo-wrap" href="#body">
+                    <img class="logo-img logo-img-main" src="img/icons/logo_white.png" alt="White Logo">
+                    <img class="logo-img logo-img-active" src="img/icons/logo_black.png" alt="Dark Logo">
+                </a>
+            </div>
+            <div class="container" style="margin-right: 20px; ">
                 <div class="menu-container js_nav-item">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="toggle-icon"></span>
                     </button>
 
-                    <div class="logo">
-                        <a class="logo-wrap" href="#body">
-                            <img class="logo-img logo-img-main" src="img/icons/logo_white.png" alt="White Logo">
-                            <img class="logo-img logo-img-active" src="img/icons/logo_black.png" alt="Dark Logo">
-                        </a>
-                    </div>
+
                 </div>
 
                 <div class="collapse navbar-collapse nav-collapse">
@@ -77,21 +92,19 @@
                     <div class="menu-container">
                         <ul class="nav navbar-nav navbar-nav-right">
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-                                    href="#about">About</a></li>
+                                    href="#whatistpth">About TPTH</a></li>
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-                                    href="tech_team/html.html">Technical Team</a></li>
-                            <!-- <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-                                    href="#services">Guidelines</a></li>
+                                    href="#implementation_team">Implementation Team</a></li>
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-                                    href="#products">Support</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" 
+                                    href="">Guidelines</a></li>
+                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="#contactus">Support</a></li>
+                            <!-- <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" 
                                     href="#work">Result</a></li> -->
                             <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-                                    href="https://forms.gle/nERkCVJpggFn6E7fA">Register Team</a></li>
-                            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-                                    href="https://forms.gle/UH59Vup2uvim7mJU6">Submit</a></li>
-			    <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
-                                    href="#contactus">Contact</a></li>
+                                    href="https://tph2022.in/login">Login/Register</a></li>
+                            <!-- <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover"
+                                    href="https://forms.gle/UH59Vup2uvim7mJU6">Submit</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -110,7 +123,7 @@
 
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img class="img-responsive" src="images/all_banners/banner_final.png" alt="Slider Image">
+                <img class="img-responsive" src="images/all_banners/banner_small_size-01.jpg" alt="Slider Image">
                 <div class="container">
                     <div class="carousel-centered">
                         <div class="margin-b-40">
@@ -179,46 +192,115 @@
 
     <!--About Section-->
 
-    <section class="new">
+    <section class="new" id="whatistpth">
         <div id="dates">
-            <h2 id="peopleheader" id="dates"><text class="oa">What is </text> TPTH 2022 ?</h2>
-        </div>
-        <div class="devicer"></div>   
-        
-        <div class="aboutbox">
-            <p class="abouttext">
-               The first edition of Tripura Police Technology Hackathon intends to seek technological solution for efficient and effective administration of Tripura Police.
-               We welcome high school and undergraduate students from all technical and non-technical institutes to participate and provide their unique outlook towards the provided problem statements.
-            </p>
-
-        <div class="cards">
-            <div class="prizecard">
-                <h3>First Prize Winner</h3>
-                <h1><i class="fas fa-award"></i> ₹ 25,000/-</h1>
-                <p>+ Certificates and More</p>
-            </div>
-
-            <div class="prizecard"><h3>Runner Up</h3>
-                <h1><i class="fas fa-award"></i> ₹ 15,000/-</h1>
-                <p>+ Certificates and More</p>
-            </div>
-        </div>
-
-    </div>
-
-    </section>
-
-
-    <!--Timeline-->
-
-    <section id="datesection">
-        <br><br>
-        <div id="dates">
-            <h2 id="peopleheader" id="dates"><text class="oa">Important</text> Dates</h2>
+            <h1 id="peopleheader" id="dates"
+                style="font-family: 'Sora' ,sans-serif; font-weight:600; color: #000000; letter-spacing: -2px;"><text
+                    class="oa">What is
+                </text> TPTH 2022 ?</h1>
         </div>
         <div class="devicer"></div>
 
-        <!-- The Timeline -->
+        <div class="aboutbox">
+            <p class="abouttext">
+                The first edition of Tripura Police Technology Hackathon intends to seek technological solution for
+                efficient and effective administration of Tripura Police.
+                We welcome high school and undergraduate students from all technical and non-technical institutes to
+                participate and provide their unique outlook towards the provided problem statements.
+            </p>
+
+            <div class="cards">
+                <div class="prizecard">
+                    <h3>First Prize Winner</h3>
+                    <h1><i class="fas fa-award"></i> ₹ 25,000/-</h1>
+                    <p>+ Certificates and More</p>
+                </div>
+
+                <div class="prizecard">
+                    <h3>Runner Up</h3>
+                    <h1><i class="fas fa-award"></i> ₹ 15,000/-</h1>
+                    <p>+ Certificates and More</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="service" style="background-color: #FFE8DC ; padding: 70px 0;">
+
+        <div id="dates">
+            <h2 id="peopleheader" id="dates" style="font-family: 'Epilogue', sans-serif;"><text class="oa">Objectives of
+                    the </text>Hackathon</h2>
+        </div>
+        <div class="devicer"></div>
+        <center>
+            <div>
+                <div class="info-card" style="padding-left: 0; padding: 0 20px;">
+                    <center>
+
+                        <div>
+                            <i class="fa fa-rocket"></class=></i><br><br>
+                            <p style="line-height: normal; font-size: medium; color:#6e6d6d; font-family: sans-serif;">
+                                Sparking Institute-Level Hackathon fueling your imaginations
+                            </p>
+                        </div>
+                    </center>
+
+                </div>
+                <div class="info-card" style="padding-left: 0; padding: 0 20px;">
+                    <center>
+                        <i class="fa fa-lightbulb"></i><br><br>
+                        <p style="line-height: normal; font-size: medium; color:#6e6d6d; font-family: sans-serif;">
+                            Brighten up your skills with the experience of your participation
+                        </p>
+
+                    </center>
+
+                </div>
+                <div class="info-card" style="padding-left: 0; padding: 0 20px;">
+                    <center>
+                        <i class="fa fa-bullseye"></i><br><br>
+                        <p style="line-height: normal; font-size: medium; color:#6e6d6d; font-family: sans-serif;">
+                            Enhancing opportunities for citizens to deliver innovative solutions
+
+                        </p>
+
+                    </center>
+
+                </div>
+                <div class="info-card" style="padding-left: 0; padding: 0 20px;">
+                    <center>
+                        <i class="fa fa-users"></i><br><br>
+                        <p style="line-height: normal; font-size: medium; color:#6e6d6d; font-family: sans-serif;">
+                            Crowd-sourcing Intelligence for improving Governance and quality of life
+
+                        </p>
+                    </center>
+
+                </div>
+                <div class="info-card" style="padding-left: 0; padding: 0 20px;">
+                    <center>
+                        <i class="fa fa-paper-plane"></i><br><br>
+                        <p style="line-height: normal; font-size: medium; color:#6e6d6d; font-family: sans-serif;">
+                            Harnessing creativity and expertise of students, and visionaries
+
+                        </p>
+                    </center>
+
+                </div>
+            </div>
+        </center>
+    </section>
+
+    <!--Timeline-->
+    <section id="datesection">
+        <br><br>
+        <div id="dates">
+            <h2 id="peopleheader" id="dates" style="font-family: 'Epilogue', sans-serif;"><text
+                    class="oa">Important</text> Dates</h2>
+        </div>
+        <div class="devicer"></div>
 
         <ul class="timeline">
             <li>
@@ -226,7 +308,7 @@
                     <div class="flag-wrapper">
                         <span class="flag" id="active-flag">1st September 2022</span>
                     </div>
-                    <div class="desc">Regsitration Begins</div>
+                    <div class="desc">Registration Begins</div>
                 </div>
             </li>
 
@@ -281,8 +363,15 @@
 
 
     <!-- About -->
-    <section id="service" class="service">
-        <div class="container">
+    <br><br>
+    <section id="service" class="service" style="background-color: #FFE8DC;">
+        <div class="container" style="padding-top:70px; padding-bottom : 70px">
+
+            <div id="dates">
+                <h2 id="peopleheader" id="dates" style="font-family: 'Epilogue', sans-serif;"><text class="oa">Problem
+                    </text>statements</h2>
+            </div>
+            <div class="devicer"></div>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="main_service_area">
@@ -457,158 +546,332 @@
     </section>
     <!-- End About -->
 
-    <!-- Latest Products -->
-    <!-- End Latest Products -->
+    <!-- Team -->
 
-    <!-- Pricing -->
-    <!-- End Pricing -->
-    <section class="new">
+    <section class="new" id="implementation_team" style="height:fit-content;">
         <div>
             <center>
-                <h2 id="peopleheader"><text class="oa">Organising </text>Committee</h2>
+                <h2 class="peopleheader" style="font-family: 'Epilogue', sans-serif;"><text class="oa">Organizing
+                    </text>Committee</h2>
                 <div class="devicer"></div>
 
-                <div class="new_tag_row" ID="tag1">
-                    <div class="new_tag_column" id="centerpeople">
-                        <div class="new_tag_card">
-                            <img class="peopleimg" src="images/img3.jpg">
-                            <div class="new_tag_container">
-                                <h3>Shri Amitabh Ranjan, IPS</h3>
-                                <h4>DGP Tripura</h4>
-                            </div>
-                        </div>
-                    </div>
+                <div class="card-header tab-card-header" style="margin-left: 34%;">
+                    <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist" style="display: flex;">
+                        <li class="nav-item" id="committee">
+                            <a class="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab"
+                                aria-controls="One" aria-selected="false" style="background-color:#ff5400;height: 58px;
+                                color: white;
+                                width: auto;padding: 16px 25px;">Organizing Committee</a>
+                        </li>
+                        <li class="nav-item" id="committee">
+                            <a class="nav-link active" id="two-tab" data-toggle="tab" href="#two" role="tab" style="height: 58px;background-color:#ff5400;;
+                               color: white;
+                               width: auto; padding: 16px 25px;" aria-controls="Two" aria-selected="true">Executive
+                                Committee</a>
+                        </li>
+                    </ul>
                 </div>
 
-                <!-- Row 1 -->
+                <div class="tab-content" id="myTabContent" style="height:fit-content;">
+                    <div class="tab-pane fade in active p-3" id="one" role="tabpanel" aria-labelledby="one-tab"
+                        style="height:fit-content;">
 
-                <div class="new_tag_row">
-                    <div class="new_tag_column">
-                        <div class="new_tag_card">
-                            <img class="peopleimg" src="images/img2.jpg">
-                            <div class="new_tag_container">
-                                <h3>Shri Saurabh Tripathi, IPS</h3>
-                                <h4>ADGP (Law and Order)</h4>
+                        <div class="new_tag_row">
+
+                            <div class="new_tag_column">
+                                <div class="new_tag_card">
+                                    <img class="peopleimg" src="images/img3.jpg">
+                                    <div class="new_tag_container">
+                                        <span class="people-name">Shri Amitabh Ranjan, IPS</span><br>
+                                        <span class="people-desig">DGP Tripura</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new_tag_column">
+                                <div class="new_tag_card">
+                                    <img class="peopleimg" src="images/img2.jpg">
+                                    <div class="new_tag_container">
+                                        <span class="people-name">Shri Saurabh Tripathi, IPS</span><br>
+                                        <span class="people-desig">ADGP (Law and Order)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new_tag_column">
+                                <div class="new_tag_card">
+                                    <img class="peopleimg" src="images/img1.jpg">
+                                    <div class="new_tag_container">
+                                        <span class="people-name">Shri Lalhminga Darlong, IPS</span><br>
+                                        <span class="people-desig">IGP (Crime)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new_tag_column">
+                                <div class="new_tag_card">
+                                    <img class="peopleimg" src="images/img4.jpg">
+                                    <div class="new_tag_container">
+                                        <span class="people-name">Shri Ajit Pratap Singh, IPS</span><br>
+                                        <span class="people-desig">SP (Cyber Crime)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new_tag_column">
+                                <div class="new_tag_card">
+                                    <img class="peopleimg" src="images/img5.jpg">
+                                    <div class="new_tag_container">
+                                        <span class="people-name">Shri Sankar Debnath, IPS</span><br>
+                                        <span class="people-desig">SP (SB)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new_tag_column">
+                                <div class="new_tag_card">
+                                    <img class="peopleimg" src="images/img6.jpg">
+                                    <div class="new_tag_container">
+                                        <span class="people-name">Miss Sharmistha Chakraborty, TPS</span><br>
+                                        <span class="people-desig">SP (Anti Narcotics)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="new_tag_column">
+                                <div class="new_tag_card">
+                                    <img class="peopleimg" src="images/img7.jpg">
+                                    <div class="new_tag_container">
+                                        <span class="people-name">Smt Sudeshna Bhattacharjee, TPS</span><br>
+                                        <span class="people-desig">SP (SCRB)</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="new_tag_column">
-                        <div class="new_tag_card">
-                            <img class="peopleimg" src="images/img1.jpg">
-                            <div class="new_tag_container">
-                                <h3>Shri Lalhminga Darlong, IPS</h3>
-                                <h4>IGP (Crime)</h4>
+
+                    <!-- // technical team -->
+
+                    <div class="tab-pane fade p-3" id="two" role="tabpanel" aria-labelledby="one-tab"
+                        style="height:fit-content;">
+
+                        <div class="new_tag_row">
+
+                            <!-- <div class="new_tag_column col2">
+                                <div class="new_tag_card">
+                                    <img class="peopleimg" src="images/tech_team/mk_debbarma.jpg">
+                                    <div class="new_tag_container">
+                                        <span class="people-name">Dr Mrinal Kanti Debbarma</span><br>
+                                        <span class="people-desig">Head of Department</span><br>
+                                        <span class="people-desig">Department of Computer Science</span>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="new_tag_column col2">
+                                <div class="new_tag_card">
+                                    <img class="peopleimg" src="images/tech_team/1516588103752.jfif">
+                                    <div class="new_tag_container">
+                                        <span class="people-name">Dr Suman Deb</span><br>
+                                        <span class="people-desig">Professor</span><br>
+                                        <span class="people-desig">Department of Computer Science</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="new_tag_column">
-                        <div class="new_tag_card">
-                            <img class="peopleimg" src="images/img4.jpg">
-                            <div class="new_tag_container">
-                                <h3>Shri Ajit Pratap Singh, IPS</h3>
-                                <h4>SP (Cyber Crime)</h4>
-                            </div>
-                        </div>
+
+
+                           <!-- <div class="row">
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Aditya Kiran Pal-01.jpg" />
+                                            </div>
+                                            <h3 class="title">Aditya Kiran Pal</h3>
+                                            <span class="post">Team Lead</span>
+                                             <ul class="social">
+                                              <li><a href="mailto:adityakiran.cs@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/aditya-kiran-pal-a35b7a1ba/" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Arghajit Bhowmik-01.jpg">
+                                            </div>
+                                            <h3 class="title">Arghajit Bhowmik</h3>
+                                            <span class="post">Developer</span> -->
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:arghajitbhowmik08@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/arghajit-bhowmik-14394421a" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/me - Shuvrajeet Das.png" />
+                                            </div>
+                                            <h3 class="title">Shuvrajeet Das</h3>
+                                            <span class="post">Developer and Management</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:shuvrajeet17@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/shuvrajeet-das-786408185/" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Dayita Chaudhuri-01.jpg" />
+                                            </div>
+                                            <h3 class="title">Dayita Chaudhuri</h3>
+                                            <span class="post">Developer</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:dayita.chaudhuri@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/dayita-chaudhuri" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Akash Acharjee-01.jpg" />
+                                            </div>
+                                            <h3 class="title">Akash Acharjee</h3>
+                                            <span class="post">Developer</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="#mailto:akashacharjee212@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/akash-acharjee-b07909205/" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Pirsa Debbarma-01.jpg" />
+                                            </div>
+                                            <h3 class="title">Pirsa Debbarma</h3>
+                                            <span class="post">Design and Developer</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:pdbarma01@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/pirsa-debbarma-31b4a4201" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Maniteja-01.jpg" />
+                                            </div>
+                                            <h3 class="title">Katam Vijaya Durga Mani Teja</h3>
+                                            <span class="post">Developer</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:katammaniteja@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/mani-teja-aaa04721a/" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Aniket-01.jpg" />
+                                            </div>
+                                            <h3 class="title">Aniket Das</h3>
+                                            <span class="post">Management</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:aniketdas9862@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/aniket-das-276613204" class="fa fa-linkedin"></a></li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                    
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/SAHIL DEY-01.JPG" />
+                                            </div>
+                                            <h3 class="title">Sahil Dey</h3>
+                                            <span class="post">Management</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:deysagar3001@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/sahil-dey-34454524a" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Shubhadeep Nath-01.jpg" />
+                                            </div>
+                                            <h3 class="title">Shubhadeep Nath</h3>
+                                            <span class="post">PR and Management</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:shubhadpn1927@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/shubhadeep-nath-bb7382200" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/sritantu-01.jpg" />
+                                            </div>
+                                            <h3 class="title">Sritanu Debbarma </h3>
+                                            <span class="post">Management</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:sritanu10@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/mwlite/in/sritanu-debbarma-19878324a" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Smit-01.jpg" />
+                                            </div>
+                                            <h3 class="title">Smit Thummar</h3>
+                                            <span class="post">Management</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:smitthummar788@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/smit-thummar-604639227"" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+                                      <div class="row" id="lastrow">
+                                        <div class="col-md-2 col-sm-6">
+                                          <div class="new_tag_card">
+                                            <div class="pic">
+                                              <img src="/images/tech_team/Aruneet.jpg" />
+                                            </div>
+                                            <h3 class="title">Aruneet Gan Chaudhuri</h3>
+                                            <span class="post">Management</span>
+                                            <!-- <ul class="social">
+                                              <li><a href="mailto:aruneetgan.nita.cse@gmail.com" class="fa fa-google-plus"></a></li>
+                                              <li><a href="https://www.linkedin.com/in/aruneet-nita/" class="fa fa-linkedin"></a></li>
+                                            </ul> 
+                                          </div>
+                                        </div>
+                                      </div> -->
                     </div>
                 </div>
-
-                <!-- Row 2 -->
-
-                <div class="new_tag_row">
-
-                    <div class="new_tag_column">
-                        <div class="new_tag_card">
-                            <img class="peopleimg" src="images/img5.jpg">
-                            <div class="new_tag_container">
-                                <h3>Shri Sankar Debnath, IPS</h3>
-                                <h4>SP (SB)</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="new_tag_column">
-                        <div class="new_tag_card">
-                            <img class="peopleimg" src="images/img6.jpg">
-                            <div class="new_tag_container">
-                                <h3>Miss Sharmistha Chakraborty, TPS</h3>
-                                <h4>SP (Anti Narcotics)</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="new_tag_column">
-                        <div class="new_tag_card">
-                            <img class="peopleimg" src="images/img7.jpg">
-                            <div class="new_tag_container">
-                                <h3>Smt Sudeshna Bhattacharjee, TPS</h3>
-                                <h4>SP (SCRB)</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </center>
         </div>
 
     </section>
-    <!-- <section class="sih-2017-tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card mt-3 tab-card">
-                        <div class="card-header tab-card-header">
-                            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="one-tab" data-toggle="tab" href="#one" role="tab"
-                                        aria-controls="One" aria-selected="true">Organizing Committee</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade p-3 active show" id="one" role="tabpanel"
-                                aria-labelledby="one-tab">
-
-                                <div class="patronsection"
-                                    style="clear:both; width:100%; padding-bottom:20px; overflow:hidden;">
-                                    <h2 style="text-align:center;">Patron</h2>
-                                    <div class="row border-btm-sih-2017">
-
-                                        <div class="col-md-4" style="margin:0 auto;">
-                                            <div class="org-sih-hard-2018" style="height: auto; padding: 40px 0;">
-                                                <div class="org-sih-hard-img">
-                                                    <img src="" class="img-responsive" alt=""
-                                                        style="max-width:196px; height:auto; border:2px solid #13768f; border-radius:50%;">
-                                                </div>
-                                                <div class="og-sih-hard-contnet" style="text-align:center;">
-                                                    <h3 style="text-align:center;">Name</h3>
-                                                    <p>Designation</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="patronsection"
-                                            style="clear:both; width:100%; padding-bottom:20px; overflow:hidden;">
-                                            <h2 style="text-align:center;">Co-Patrons</h2>
-                                            <div class="row border-btm-sih-2017">
-
-                                                <div class="col-md-4">
-                                                    <div class="org-sih-hard-2018"
-                                                        style="height: auto; padding: 40px 0;">
-                                                        <div class="org-sih-hard-img">
-                                                            <img src="" class="img-responsive" alt=""
-                                                                style="max-width:186px; height:auto; border:2px solid #13768f; border-radius:50%;">
-                                                        </div>
-                                                        <div class="og-sih-hard-contnet" style="text-align:center;">
-                                                            <h3 style="text-align:center;">Name</h3>
-                                                            <p>Designation</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-    </section> -->
     <!-- Work -->
 
 
@@ -652,20 +915,21 @@
                     <div class="col-lg-4 col-md-6 footer-widget footer-about" id="about">
                         <h3 class="widget-title">About TPTH 2022</h3>
                         <img loading="lazy" class="footer-logo" src="img/icons/logo_white.png" alt="Constra">
-                        <p>‘Tripura Police Technology Hackathon- 2022’ from 1st September, 2022. The Hackathon intends to
+                        <p>‘Tripura Police Technology Hackathon- 2022’ from 1st September, 2022. The Hackathon intends
+                            to
                             seek technological solution for efficient and effective administration of Tripura Police.
                             This Hackathon is being organized in association with National Institute of Technology
                             (NIT), Agartala as Knowledge Partner. </p>
                         <div class="footer-social">
                             <ul>
-                                <li><a href="https://www.facebook.com/tpth2022/" aria-label="Facebook"><i
-                                            class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://twitter.com/PoliceHackathon" aria-label="Twitter"><i
+                                <li><a href="https://www.facebook.com/profile.php?id=100085054673701"
+                                        aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com/tpth2022" aria-label="Twitter"><i
                                             class="fab fa-twitter"></i></a>
                                 </li>
                                 <li><a href="https://www.instagram.com/_tpth_2022/" aria-label="Instagram"><i
                                             class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://github.com/TPTH-2022" aria-label="Github"><i
+                                <li><a href="https://github.com/tpth-2k22" aria-label="Github"><i
                                             class="fab fa-github"></i></a></li>
                             </ul>
                         </div><!-- Footer social end -->
@@ -677,7 +941,8 @@
                     <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0" id="contactus">
                         <h3 class="widget-title">Contact Details :-</h3>
                         <div class="working-hours">
-                            <br> Email: <a href="mailto:tpth.2k22@gmail.com" style="color: #FFFFFF;">tpth.2k22@gmail.com</a>
+                            <br> Email: <a href="mailto:tpth.2k22@gmail.com"
+                                style="color: #FFFFFF;">tpth.2k22@gmail.com</a>
                         </div>
                     </div><!-- Col end -->
 
@@ -695,8 +960,15 @@
                                 <!-- <script>
                                     document.write(new Date().getFullYear())
                                 </script> -->
-                                Designed &amp; Developed by <a href="http://tph2022.in/tech_team/html.html">TPTH</a> 
-                                <p style="color: black;">Last Updated:2:06am,03/09/2022</p>
+                                Designed &amp; Developed by <a href="tech_team/html.html">TPTH</a>
+                                <p style="color: black;">Last Updated : 1:00am, 06/09/2022</p>
+                                <!-- Last updated : 
+                                <p id="demo" style="color: black;"></p>
+
+                                <script>
+                                    const d = new Date();
+                                    document.getElementById("demo").innerHTML = d;
+                                </script> -->
                             </span>
                         </div>
                     </div>
@@ -758,6 +1030,7 @@
             var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
         }
     </script>
+
 
 </body>
 <!-- END BODY -->
