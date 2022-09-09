@@ -1,0 +1,1 @@
+-- INSERT INTO `members`(`team_name`, `name`, `email`, `organization`) VALUES ('dark','akash','akashacharjee212@gmail.com','VIML');
